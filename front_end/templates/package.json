@@ -1,0 +1,46 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "prod": "mix --production"
+    },
+    "devDependencies": {
+        "webpack-cli": "^4.3.1"
+    },
+    "dependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.14.5",
+        "@babel/plugin-proposal-decorators": "^7.14.5",
+        "@babel/preset-react": "^7.12.10",
+        "@babel/runtime": "^7.12.5",
+        "animate.css": "^4.1.1",
+        "axios": "^0.21.1",
+        "cross-env": "^7.0.3",
+        "laravel-mix": "^6.0.24",
+        "lodash": "^4.17.21",
+        "mobx": "^6.1.5",
+        "mobx-react": "^7.1.0",
+        "moment": "^2.29.1",
+        "postcss": "^8.3.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-loader-spinner": "^3.1.14",
+        "react-notifications-component": "^3.0.3",
+        "react-number-format": "^4.5.3",
+        "react-router-dom": "^5.2.0",
+        "react-select": "^4.1.0",
+        "react-to-print": "^2.12.6"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ],
+        "plugins": [
+            ["@babel/plugin-proposal-decorators", { "legacy": true }],
+            ["@babel/plugin-proposal-class-properties", { "loose": false }]
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{% extends "base_template/authentication.html" %} 
+
+{% block content %} 
+
+{% load static%}
+
+<section class="login-block">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <h1>SRA-AFD Portal</h1>
+                </div>
+
+                <div id="login"></div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script src="{% static 'build/js/Authentication/LoginFormMainComp.js' %}"></script>
+
+{% endblock %}
